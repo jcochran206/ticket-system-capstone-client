@@ -8,11 +8,60 @@ This project is a ticketing system that allows users to post tickets.  Techs wil
 ## User Stories (done)
 This app is for four types of users: a visitor, tech, customer, and Admin
 
-#### (Example) Landing Page
+#### Landing Page
 * as a visitor
 * I want to understand what I can do with this app (or sign up, or log in)
 * so I can decide if I want to use it
 
+#### Register Page
+* as a visitor
+* I want to register 
+* so that I can use the application
+
+#### Login Page
+* as a visitor
+* I want to login 
+* so that I can use the application
+
+#### Dashboard Page
+* as a Registered User, Tech, Admin
+* I want to view a list of items 
+* so that I can have my issue fixed by remote tech 
+
+#### Dashboard Page (Modify Ticket page)
+* as an admin, tech 
+* I want to assign ticket to myself or tech
+* so I can work the ticket in the system until complete
+
+#### Dashboard Page (Update ticket page)
+* as an Admin, tech
+* I want to modify the list of tickets
+* so that I can fix errors in the ticket or raise the priority 
+
+#### Dashboard Page (Delete ticket page)
+* as an Admin, tech, registered user 
+* I want to remove a ticket from the queue
+* so it is removed from the list and database
+
+#### Admin Portal Page
+* as an Admin 
+* I want to view all techs that are available
+* so I can assign tickets on the overall list
+
+#### Admin Portal page
+* as an Admin
+* I want to view the percentage of completed tickets
+* so I can review the amount of tickets the team has closed 
+
+#### New Ticket Page (create)
+* as a Registered User, tech, admin
+* I want to make a ticket 
+* so that I can have my issue addressed by techs
+
+#### New Tech Account Page
+* as a tech (employee), admin
+* I want to create an account in the system
+* so I can work on assigned tickets 
 
 
 ### Wireframes (to do now)
