@@ -1,4 +1,4 @@
-# Ticket System Capstone
+# Ticket System Capstone (LEAFDESK)
 This project is a ticketing system that allows users to post tickets.  Techs will answer the system tickets and provide customers status on work conducted and close out system tickets.  
 
 ## Working Prototype (to do later)
