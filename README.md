@@ -104,6 +104,9 @@ The app's functionality includes:
 * Admins can modify priorities of tickets
 * Admins can assign tickets to techs
 * Admins can add customers into site if needed
+* Techs can create asset qrcodes
+* customers can create asset qrcodes 
+* admin can create qrcodes
 
 
 ## Technology (done)
@@ -125,6 +128,27 @@ The app's functionality includes:
     * id (auto-generated)
     * username (email validation)
     * password (at least 8 chars, at least 1 Alpha, 1 Num, 1 Cap)
+    * Role 
+
+* Incidents Table
+    * id (auto-generated) integer
+    * status
+    * title
+    * comments
+    * priority
+    * owner (fk customer database)
+    * location (city) string varchar 50
+
+* Devices table
+    * id (auto- gen) int
+    * device (selector: computer, phone, mifi, ) string
+    * serial int
+    * owner string (fk customer id)
+    * signDate date
+    * location (city) string
+
+
+
 
 
 
