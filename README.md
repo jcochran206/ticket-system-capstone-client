@@ -63,6 +63,15 @@ This app is for four types of users: a visitor, tech, customer, and Admin
 * I want to create an account in the system
 * so I can work on assigned tickets 
 
+#### Asset QRCode Input Page
+* as a Customer, Tech
+* I want to create an asset tag for a device
+* so i can store it in the database
+
+#### Asset Inventory Page
+* as a Tech, Customer, Admin
+* I want to see all devices in inventory
+* so i can view all devices and their location
 
 ### Wireframes (to do now)
 (Example) Landing Page
@@ -111,11 +120,13 @@ The app's functionality includes:
             * __Register.js__ (stateful) -
         * __Navbar.js__ (stateless) -
 
-## Back-end Structure - Business Objects (to do later)
-* (Example) Users (database table)
+## Back-end Structure - Business Objects (pending)
+* Users (database table)
     * id (auto-generated)
     * username (email validation)
-    * password (at least 8 chars, at least one alpha and a special character validation)
+    * password (at least 8 chars, at least 1 Alpha, 1 Num, 1 Cap)
+
+
 
 
 ## API Documentation (to do later)
