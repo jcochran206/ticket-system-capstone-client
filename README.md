@@ -74,9 +74,16 @@ This app is for four types of users: a visitor, tech, customer, and Admin
 * so i can view all devices and their location
 
 ### Wireframes (to do now)
-(Example) Landing Page
+Landing Page
 :-------------------------:
-![Landing Page](/github-images/wireframes/landing-page-wireframe.png)
+![Landing Page](/github-images/wireframes/landingPage.png)
+Incidents Page
+:-------------------------:
+![Incidents Page](/github-images/wireframes/Tickets.png)
+Dashboard Page
+:-------------------------:
+![Dashboard Page](/github-images/wireframes/dashboard.png)
+
 Register Page
 ![Register Page](/github-images/wireframes/register-page-wireframe.png)
 
