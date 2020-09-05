@@ -78,14 +78,11 @@ Landing Page
 :-------------------------:
 ![Landing Page](/github-images/wireframes/landingPage.png)
 Incidents Page
-:-------------------------:
 ![Incidents Page](/github-images/wireframes/Tickets.png)
 Dashboard Page
-:-------------------------:
 ![Dashboard Page](/github-images/wireframes/dashboard.png)
-
-Register Page
-![Register Page](/github-images/wireframes/register-page-wireframe.png)
+Sign UP Page
+![Sign Up Page](/github-images/wireframes/signup.png)
 
 ## Screenshots (to do later)
 (Example) Landing Page
