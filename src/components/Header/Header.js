@@ -1,10 +1,10 @@
-import React from 'react'
+import React, {Component} from 'react'
 import ReactDom from 'react-dom'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
-class Header extends Component{
-render(){
-    return(
+
+export default function Header() {
+      return (
         <div className="nav">
             <div className="logo">
                 LOGO
@@ -21,11 +21,6 @@ render(){
                     Login
                 </Link>
             </ul>
-
-
-        </div> 
-    )
-  }
-}
-
-export default header;
+         </div>
+      )
+    }
