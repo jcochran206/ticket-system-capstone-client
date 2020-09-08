@@ -120,19 +120,27 @@ The app's functionality includes:
 
 
 ## Front-end Structure - React Components Map (to do later)
-* (Example) __Index.js__ (stateless)
+* __Index.js__ (stateless)
     * __App.js__ (stateful)
         * __LandingPage.js__ (stateful) - gets the _"prop name"_ and the _"callback prop name"_ from the __App.js__
             * __Login.js__ (stateful) -
             * __Register.js__ (stateful) -
+            * __Ticket.js__(stateful) - 
+            * __Dashboard.js__(stateful) - 
         * __Navbar.js__ (stateless) -
+        * __Footer.js__ (stateless) - 
+
 
 ## Back-end Structure - Business Objects (pending)
-* Users (database table)
+* Customers (database table)
     * id (auto-generated)
     * username (email validation)
     * password (at least 8 chars, at least 1 Alpha, 1 Num, 1 Cap)
-    * Role 
+
+* Employees (database table)
+    * id (auto-generated)
+    * username (email)
+    * password
 
 * Incidents Table
     * id (auto-generated) integer
