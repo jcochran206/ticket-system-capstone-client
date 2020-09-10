@@ -2,7 +2,7 @@
 This project is a ticketing system that allows users to post tickets.  Techs will answer the system tickets and provide customers status on work conducted and close out system tickets.  
 
 ## Working Prototype (to do later)
-(Example) You can access a working prototype of the React app here: https://your-app-client.herokuapp.com/ and Node app here: https://ticket-system-capstone-server.herokuapp.com/
+(Example) You can access a working prototype of the React app here: https://ticket-system-capstone-client.vercel.app/ and Node app here: https://ticket-system-capstone-server.herokuapp.com/
 
 
 ## User Stories (done)
