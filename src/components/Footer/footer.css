@@ -1,0 +1,29 @@
+a {
+    list-style: none;
+}
+
+li {
+    list-style: none;
+    display: inline;
+    padding: 5px;
+}
+
+.footer {
+    background: #f4f4f4;
+    border: solid 2px red;
+    display: inline-block;
+    height: 50px;
+    width: 100%;
+    padding: 20px 20px;
+}
+
+.social {
+    float: right;
+    color: blue;
+    width: 40%;
+}
+
+.copy {
+    float: left;
+    width: 40%;
+}
