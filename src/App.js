@@ -1,25 +1,30 @@
 import React from 'react';
-import ReactDom from 'react-dom';
-import {Route, Switch, Link} from 'react-router-dom';
-import Header from './components/Header/Header'; 
-import Footer from './components/Footer/footer';
+import {Route, Switch, BrowserRouter} from 'react-router-dom';
+//landing page components
 import Hero from './components/Sections/Hero/hero';
-import Service from './components/Sections/Services/service';
 import HowTo from './components/Sections/HowTo/howTo';
-import Login from './components/Login/login'
+import Service from './components/Sections/Services/service';
+import Login from './components/Login/login';
+import Nav from './components/Nav/nav'; 
+import Footer from './components/Footer/footer';
+import SignUp from './components/SignupForm/signUpForm';
+import Error from './components/Sections/Error/error';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Hero />
-      <Service />
-      <HowTo />
-      <Switch>
-      <Route exact path='/' component={Hero}/> 
-      <Route path='/login' component={Login}/> 
-      </Switch> 
+      <BrowserRouter>
+      <Nav />
+       <Switch>
+          <Route exact path='/' component={Hero} />
+          <Route path='/hero/:howto' component={HowTo} />
+          <Route path="/hero/:services" component={Service} />
+          <Route path="/login" component={Login} />
+          <Route path="/signup" component={SignUp} />
+          <Route component={Error}/>
+        </Switch>
+      </BrowserRouter>
       <Footer />
     </div>
   );
