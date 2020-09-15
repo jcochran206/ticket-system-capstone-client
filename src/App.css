@@ -1,3 +1,4 @@
+/* globals */
 *{
   padding: 0;
   margin: 0;
@@ -7,6 +8,18 @@
 body {
   background: #f3f3f3;
 }
+/* headings */
+
+h1{
+  font-size: 2rem;
+}
+/* paragraphs */
+
+p{
+  font-size: 1rem;
+}
+
+/* links */
 
 a {
   list-style: none;
@@ -18,6 +31,51 @@ li {
   padding: 5px;
 }
 
+/*logo section*/
+
+/*nav section*/
+
+/*hero section*/
+.hero {
+  background:#f3f3f3;
+  font-family: sans-serif;
+  text-align: left;
+  height: 15rem;
+  width: 100%;
+}
+
+a.btn-hero {
+  text-decoration: none;
+  list-style: none;
+}
+
+.banner {
+  height: 100%;
+  background:grey;
+}
+
+.btn-hero {
+  background: #fefefe;
+  border: solid 5px white;
+  border-radius: 5px;
+  color:lightgrey;
+  font-family: sans-serif;
+  font-weight: bold;
+
+}
+
+.btn-hero:hover{
+  background: black;
+  border: solid 5px black;
+  color: white;
+}
+
+/* services */
+.service-list {
+  background:lightgray;
+}
+
+/*footer section*/
 .footer {
   background: #f4f4f4;
   border: solid 2px red;

@@ -5,11 +5,11 @@ export default function HowTo() {
     return(
         <div className="HowTo">
             <div className="title">
-                <h2>How To Use</h2>
+                <h2>About Application</h2>
             </div>
             <br/>
             <div className="">
-                <p>content explaining information on how to use system goes here</p>
+                <p>about section paragraph here</p>
             </div>
         </div>
     )

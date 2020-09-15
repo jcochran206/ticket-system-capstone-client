@@ -1,5 +1,4 @@
 import React from 'react';
-import '../Services/service.css';
 
 export default function Service() {
     return(

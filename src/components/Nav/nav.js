@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import './header.css';
 import { Link } from 'react-router-dom';
 
 
@@ -14,11 +13,8 @@ export default class Nav extends Component {
                     <Link to="/">
                         Home
                     </Link>
-                    <Link to="/hero/:howto">
-                        How To
-                    </Link>
-                    <Link to="/hero/:services">
-                        Services
+                    <Link to="/about">
+                        About
                     </Link>
                     <Link to="/login">
                         Login
