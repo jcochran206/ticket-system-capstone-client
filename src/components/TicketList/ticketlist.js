@@ -1,21 +1,48 @@
 import React from 'react';
+import config from '../../config';
 
 class Tickets extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: []
+            incidents: []
         }
     }
 
+  componentDidMount(){
+    fetch(`${config.API_ENDPOINT}/incidents`)
+    .then(res => res.json())
+    .then(incidents => {
+      this.setState({
+        incidents
+
+      }, () => {
+        console.log(this.state)
+      })
+    })
+  }
+
+  handleDelete = (incidentid) => {
+    
+    fetch(`${config.API_ENDPOINT}/incidents/${incidentid}`, {
+      method: 'DELETE',
+    })
+    .then(() => {
+      this.setState({
+        incidents: this.state.incidents.filter(incident => parseInt(incident.id) !== parseInt(incidentid))
+      })
+      this.props.history.push('/tickets')
+    })
+  }
+
    render(){
-       let { data } = this.state;
+       let { incidents } = this.state;
        return (
         <div>
            <h2>Leaf desk Incidents Page</h2>
   <table className="ticket-table">
   <tr>
-    <th>id</th>
+    <th>#</th>
     <th>Title</th>
     <th>Comments</th>
     <th>Priority</th>
@@ -25,38 +52,21 @@ class Tickets extends React.Component {
     <th>Delete</th>
   </tr>
   
-  <tr>
-    <td>1</td>
-    <td>malware on device</td>
-    <td>ransomware popup on my computer screen</td>
-    <td>High</td>
-    <td>1</td>
-    <td>Seattle</td>
-    <td><button className="btn-update">Update</button></td>
-    <td><button className="btn-delete">Delete</button></td>
-  </tr>
+  {incidents.map(incident => {
+    return(
+    <tr key={incident.id}>
+    <td>{incident.id}</td>
+   <td>{incident.title}</td>
+    <td>{incident.comments}</td>
+    <td>{incident.users_id}</td>
+   <td>1</td>
+   <td>Seattle</td>
+   <td><button className="btn-update">Update</button></td>
+   <td><button className="btn-delete" onClick={() => this.handleDelete(incident.id)}>Delete</button></td>
+ </tr>
 
-  <tr>
-    <td>2</td>
-    <td>new device</td>
-    <td>need apps for work</td>
-    <td>medium</td>
-    <td>1</td>
-    <td>Tacoma</td>
-    <td><button className="btn-update">Update</button></td>
-    <td><button className="btn-delete">Delete</button></td>
-  </tr>
-
-  <tr>
-    <td>3</td>
-    <td>issue out device</td>
-    <td>obtained device from Bob</td>
-    <td>low</td>
-    <td>2</td>
-    <td>Kirkland</td>
-    <td><button className="btn-update">Update</button></td>
-    <td><button className="btn-delete">Delete</button></td>
-  </tr>
+    )
+  })}
   
 </table>
         </div>

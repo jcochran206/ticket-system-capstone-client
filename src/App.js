@@ -24,7 +24,6 @@ function App() {
           <Route path="/hero/:services" component={Service} />
           <Route path="/about" component={About} />
           <Route path="/login" component={Login} />
-          
           <Route path="/signup" component={SignUp} />
           <Route path="/tickets" component={TicketList} />
           <Route component={Error}/>
