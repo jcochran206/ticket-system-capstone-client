@@ -22,6 +22,9 @@ export default class Nav extends Component {
                     <Link to="/signup">
                         Signup
                     </Link>
+                    <Link to="/tickets">
+                        tickets
+                    </Link>
                 </ul>
              </div>
           )

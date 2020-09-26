@@ -28,16 +28,19 @@ a {
 li {
   list-style: none;
   display: inline;
-  padding: 5px;
+  padding: 14px 16px;
+  text-align: center;
 }
 
 /*logo section*/
 
 /*nav section*/
 
+
 /*hero section*/
 .hero {
   background:#f3f3f3;
+  border-radius: 5px;
   font-family: sans-serif;
   text-align: left;
   height: 15rem;
@@ -78,7 +81,6 @@ a.btn-hero {
 /*footer section*/
 .footer {
   background: #f4f4f4;
-  border: solid 2px red;
   display: inline-block;
   height: 50px;
   width: 100%;
@@ -95,3 +97,28 @@ a.btn-hero {
   float: left;
   width: 40%;
 }
+
+/* tickets section */
+
+.ticket-table {
+  font-family: sans-serif;
+  width: 100%;
+}
+
+.ticket-table td, .ticket-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.ticket-table tr:nth-child(even){background-color: #f2f2f2;}
+
+.ticket-table tr:hover {background-color: #ddd;}
+
+.ticket-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white
+}
+
