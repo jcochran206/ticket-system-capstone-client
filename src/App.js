@@ -11,6 +11,7 @@ import SignUp from './components/SignupForm/signUpForm';
 import About from './components/Sections/About/about';
 import Error from './components/Sections/Error/error';
 import TicketList from './components/TicketList/ticketlist';
+import AddIncident from './components/TicketList/AddIncident';
 import './App.css';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route path="/login" component={Login} />
           <Route path="/signup" component={SignUp} />
           <Route path="/tickets" component={TicketList} />
+          <Route path="/addincident" component={AddIncident} />
           <Route component={Error}/>
         </Switch>
       </BrowserRouter>

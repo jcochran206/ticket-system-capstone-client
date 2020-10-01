@@ -22,6 +22,10 @@ class Tickets extends React.Component {
     })
   }
 
+  handleAddIncident = (incident) => {
+    
+  }
+
   handleDelete = (incidentid) => {
     
     fetch(`${config.API_ENDPOINT}/incidents/${incidentid}`, {
@@ -34,6 +38,10 @@ class Tickets extends React.Component {
       this.props.history.push('/tickets')
     })
   }
+
+  handleAdd = () => {
+    this.props.history.push('/addIncident')
+}
 
    render(){
        let { incidents } = this.state;
@@ -48,6 +56,7 @@ class Tickets extends React.Component {
     <th>Priority</th>
     <th>Owner</th>
     <th>Location</th>
+    <th>Add</th>
     <th>Edit</th>
     <th>Delete</th>
   </tr>
@@ -59,8 +68,9 @@ class Tickets extends React.Component {
    <td>{incident.title}</td>
     <td>{incident.comments}</td>
     <td>{incident.users_id}</td>
-   <td>1</td>
-   <td>Seattle</td>
+    <td>{incident.inc_pri}</td>
+    <td>{incident.office_location}</td>
+   <td><button className="btn-add" onClick={() => this.handleAdd()}>Add</button></td>
    <td><button className="btn-update">Update</button></td>
    <td><button className="btn-delete" onClick={() => this.handleDelete(incident.id)}>Delete</button></td>
  </tr>
