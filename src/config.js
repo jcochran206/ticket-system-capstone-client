@@ -1,4 +1,5 @@
 export default {
-    //API_ENDPOINT:'https://ticket-system-capstone-server.herokuapp.com/api',
-    API_ENDPOINT:'http://localhost:8000/api'
-    }
+    API_ENDPOINT: process.env.REACT_APP_API_BASE_URL ||
+    "https://ticket-system-capstone-server.herokuapp.com/api"
+}
+
