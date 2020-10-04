@@ -44,9 +44,9 @@ class addIncident extends React.Component {
     render() {
         const {title, comments, user_id, inc_pri, location} = this.state;
         return (
-            <div>
-            <h2>Add Incidents</h2>
+        <div className="addIncident-form">
             <form onSubmit={this.handleAdd}>
+            <h2>Add Incidents</h2>
             <div className="form-group">
                     <label htmlFor="title">Title *</label>
                     <input type="text" className="login__control" name="title"

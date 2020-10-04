@@ -49,6 +49,10 @@ class Tickets extends React.Component {
         <div>
            <h2>Leaf desk Incidents Page</h2>
   <table className="ticket-table">
+  <tr> 
+    <th>Add a new incident</th>
+    <td><button className="btn-add" onClick={() => this.handleAdd()}>Add</button></td>
+  </tr>
   <tr>
     <th>#</th>
     <th>Title</th>
@@ -56,7 +60,6 @@ class Tickets extends React.Component {
     <th>Priority</th>
     <th>Owner</th>
     <th>Location</th>
-    <th>Add</th>
     <th>Edit</th>
     <th>Delete</th>
   </tr>
@@ -65,12 +68,11 @@ class Tickets extends React.Component {
     return(
     <tr key={incident.id}>
     <td>{incident.id}</td>
-   <td>{incident.title}</td>
+    <td>{incident.title}</td>
     <td>{incident.comments}</td>
     <td>{incident.users_id}</td>
     <td>{incident.inc_pri}</td>
     <td>{incident.office_location}</td>
-   <td><button className="btn-add" onClick={() => this.handleAdd()}>Add</button></td>
    <td><button className="btn-update">Update</button></td>
    <td><button className="btn-delete" onClick={() => this.handleDelete(incident.id)}>Delete</button></td>
  </tr>
@@ -78,7 +80,7 @@ class Tickets extends React.Component {
     )
   })}
   
-</table>
+  </table>
         </div>
        )
    }

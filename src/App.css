@@ -99,6 +99,7 @@ a.btn-hero {
   background: #204969;
   display: inline-block;
   font-weight: bold;
+  margin: 10px;
   height: 50px;
   width: 100%;
   padding: 20px 20px;
@@ -141,3 +142,33 @@ a.btn-hero {
   color: #f3f3f3;
 }
 
+.btn-add {
+  background: #204969;
+  border-radius: 5px;
+  color: #f3f3f3;
+  font-family: sans-serif;
+  font-weight: bold;
+  height: 2.5rem;
+  width: 4rem;
+  margin: 5px 5px;
+}
+
+/* add incident section */
+.addIncident-form {
+  border: 5px solid blue;
+  height: 30rem;
+  width: 30rem; 
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.form-group {
+  border: 2px solid red;
+  margin: 5px 5px;
+  padding: 10px;
+}
+
+form {
+  height: 300px;
+  width: 300px;
+}
