@@ -1,4 +1,18 @@
 /* globals */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Slab:wght@400;700;900&display=swap');
+/*
+--primary-text-color: white;
+--secondary-text-color: grey;
+--primary-color: #08ffc8;
+--secondary-color: #dadada;
+--accent-color: #204969;
+--background-color: #fff7f7;
+//google font link
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Slab:wght@400;700;900&display=swap" rel="stylesheet">
+font-family: 'Lato', sans-serif;
+font-family: 'Roboto Slab', serif;
+
+*/
 *{
   padding: 0;
   margin: 0;
@@ -7,10 +21,13 @@
 
 body {
   background: #f3f3f3;
+  font-family: 'Lato', sans-serif;
+
 }
 /* headings */
 
 h1{
+  font-family: 'Roboto Slab', serif;
   font-size: 2rem;
 }
 /* paragraphs */
@@ -20,7 +37,6 @@ p{
 }
 
 /* links */
-
 a {
   list-style: none;
 }
@@ -80,16 +96,19 @@ a.btn-hero {
 
 /*footer section*/
 .footer {
-  background: #f4f4f4;
+  background: #204969;
   display: inline-block;
+  font-weight: bold;
   height: 50px;
   width: 100%;
   padding: 20px 20px;
+  color:#f3f3f3;
 }
 
 .social {
   float: right;
-  color: blue;
+  color: #f3f3f3;
+  font-weight: bold;
   width: 40%;
 }
 
@@ -110,7 +129,7 @@ a.btn-hero {
   padding: 8px;
 }
 
-.ticket-table tr:nth-child(even){background-color: #f2f2f2;}
+.ticket-table tr:nth-child(even){background-color: #7cbbf6;}
 
 .ticket-table tr:hover {background-color: #ddd;}
 
@@ -118,7 +137,7 @@ a.btn-hero {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #4CAF50;
-  color: white
+  background-color: #204969;
+  color: #f3f3f3;
 }
 

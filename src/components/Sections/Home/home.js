@@ -23,10 +23,12 @@ export default function Home(){
         </div>
         <div className="service-list">
             <div className="box">
-                service info here
+            <h2>Customer Service</h2>
+            <p>LeafDesk provides remote customer service techs available around the clock to assist with your needs</p>
             </div>
             <div className="box">
-                service info here
+            <h2>Coming Soon</h2>
+            <p>LeafDesk provides asset managment with remote customer service. Allowing you one location to see all your assets</p>
             </div>
         </div>
         
