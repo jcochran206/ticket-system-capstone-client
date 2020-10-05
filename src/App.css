@@ -39,6 +39,17 @@ p{
 /* links */
 a {
   list-style: none;
+  color: #fefefe;
+  margin: 0px 5px;
+}
+
+a:visited {
+  list-style: none;
+  color:#08ffc8;
+}
+
+a:active {
+  color: #d1e70c;
 }
 
 li {
@@ -48,10 +59,27 @@ li {
   text-align: center;
 }
 
-/*logo section*/
-
 /*nav section*/
+.nav{
+  background: #204969;
+  color: white;
+  display: block;
+  margin: 10px 0px;
+  height: 50px;
+  width: 100%;
+  padding: 10px 20px;
+  color:#f3f3f3;
+}
 
+.logo{
+  float: left;
+}
+
+.navLinks {
+  float: right;
+  width: 30%;
+  color: #f3f3f3;
+}
 
 /*hero section*/
 .hero {
@@ -92,30 +120,6 @@ a.btn-hero {
 /* services */
 .service-list {
   background:lightgray;
-}
-
-/*footer section*/
-.footer {
-  background: #204969;
-  display: inline-block;
-  font-weight: bold;
-  margin: 10px;
-  height: 50px;
-  width: 100%;
-  padding: 20px 20px;
-  color:#f3f3f3;
-}
-
-.social {
-  float: right;
-  color: #f3f3f3;
-  font-weight: bold;
-  width: 40%;
-}
-
-.copy {
-  float: left;
-  width: 40%;
 }
 
 /* tickets section */
@@ -171,4 +175,28 @@ a.btn-hero {
 form {
   height: 300px;
   width: 300px;
+}
+
+/*footer section*/
+.footer {
+  background: #204969;
+  display: inline-block;
+  font-weight: bold;
+  margin: 1.5rem 0px;
+  height: 50px;
+  width: 100%;
+  padding: 20px 20px;
+  color:#f3f3f3;
+}
+
+.social {
+  float: right;
+  color: #f3f3f3;
+  font-weight: bold;
+  width: 40%;
+}
+
+.copy {
+  float: left;
+  width: 40%;
 }
