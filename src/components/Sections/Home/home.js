@@ -23,12 +23,39 @@ export default function Home(){
         </div>
         <div className="service-list">
             <div className="box">
-            <h2>Customer Service</h2>
-            <p>LeafDesk provides remote customer service techs available around the clock to assist with your needs</p>
+                <div className="box-preview">
+                    <h6>Service</h6>
+                    <h2>Customer Support</h2>
+                </div>
+                <div className="box-info">
+                    <h2>Remote Customer Service</h2>
+                    <p>LeafDesk provides remote customer service techs available around the clock to assist with your needs</p>
+                    <button class="btn">Read More</button>
+                </div>
             </div>
+
             <div className="box">
-            <h2>Coming Soon</h2>
-            <p>LeafDesk provides asset managment with remote customer service. Allowing you one location to see all your assets</p>
+                <div className="box-preview">
+                    <h6>Coming Soon</h6>
+                    <h2>Asset Support</h2>
+                </div>
+                <div className="box-info">
+                    <h2>Asset Management Service </h2>
+                    <p>LeafDesk provides asset managment with remote customer service. Providing you one location for all your assets</p>
+                    <button class="btn">Read More</button>
+                </div>
+            </div>
+
+            <div className="box">
+                <div className="box-preview">
+                    <h6>Coming Soon</h6>
+                    <h2>Dashboards</h2>
+                </div>
+                <div className="box-info">
+                    <h2>Dashboard Service </h2>
+                    <p>LeafDesk provides you with more stats and health of your assets and who is on the task</p>
+                    <button class="btn">Read More</button>
+                </div>
             </div>
         </div>
         
