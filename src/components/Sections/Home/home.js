@@ -30,7 +30,7 @@ export default function Home(){
                 <div className="box-info">
                     <h2>Remote Customer Service</h2>
                     <p>LeafDesk provides remote customer service techs available around the clock to assist with your needs</p>
-                    <button class="btn">Read More</button>
+                    <button class="btn-info">Read More</button>
                 </div>
             </div>
 
@@ -42,7 +42,7 @@ export default function Home(){
                 <div className="box-info">
                     <h2>Asset Management Service </h2>
                     <p>LeafDesk provides asset managment with remote customer service. Providing you one location for all your assets</p>
-                    <button class="btn">Read More</button>
+                    <button class="btn-info">Read More</button>
                 </div>
             </div>
 
@@ -54,7 +54,7 @@ export default function Home(){
                 <div className="box-info">
                     <h2>Dashboard Service </h2>
                     <p>LeafDesk provides you with more stats and health of your assets and who is on the task</p>
-                    <button class="btn">Read More</button>
+                    <button class="btn-info">Read More</button>
                 </div>
             </div>
         </div>

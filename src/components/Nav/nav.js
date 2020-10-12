@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../../assets/imgs/leaf32.png';
 
 
 export default class Nav extends Component {
@@ -7,7 +8,7 @@ export default class Nav extends Component {
         return (
             <div className="nav">
                 <div className="logo">
-                    LOGO Here
+                    <img src={logo} alt="leaf desk"/>
                 </div>
                 <ul className="navLinks">
                     <Link to="/">
