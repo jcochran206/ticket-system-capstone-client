@@ -8,7 +8,7 @@ export default class Nav extends Component {
         return (
             <div className="nav">
                 <div className="logo">
-                    <img src={logo} alt="leaf desk"/>
+                    <img className="logo-img" src={logo} alt="leaf desk"/>
                 </div>
                 <ul className="navLinks">
                     <Link to="/">

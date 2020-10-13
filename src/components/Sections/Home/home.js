@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import deskimg from '../../../assets/imgs/deskimage1.jpg';
 
 
 export default function Home(){
@@ -7,9 +8,14 @@ export default function Home(){
     <div className="wrapper">
         <div className="hero">
             <div className="banner">
+            <div className="banner-right">
+            <img classname="banner-img" src={deskimg} />
+            </div>
+            <div className="banner-left">
             <h1>Customer Support and Asset management done right!</h1>
             <p>Looking for help managing your customers or assets We've got you covered</p>
             <Link to="/" className="btn-hero">Signup Now!</Link>
+            </div>
             </div>
         </div>
         <div className="HowTo">
@@ -30,7 +36,7 @@ export default function Home(){
                 <div className="box-info">
                     <h2>Remote Customer Service</h2>
                     <p>LeafDesk provides remote customer service techs available around the clock to assist with your needs</p>
-                    <button class="btn-info">Read More</button>
+                    <button className="btn-info">Read More</button>
                 </div>
             </div>
 
@@ -42,7 +48,7 @@ export default function Home(){
                 <div className="box-info">
                     <h2>Asset Management Service </h2>
                     <p>LeafDesk provides asset managment with remote customer service. Providing you one location for all your assets</p>
-                    <button class="btn-info">Read More</button>
+                    <button className="btn-info">Read More</button>
                 </div>
             </div>
 
@@ -54,7 +60,7 @@ export default function Home(){
                 <div className="box-info">
                     <h2>Dashboard Service </h2>
                     <p>LeafDesk provides you with more stats and health of your assets and who is on the task</p>
-                    <button class="btn-info">Read More</button>
+                    <button className="btn-info">Read More</button>
                 </div>
             </div>
         </div>
